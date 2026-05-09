@@ -9,13 +9,14 @@ class SplashViewBody extends StatelessWidget {
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Center(
-            child: Image(
-              image: AssetImage(AssetsClass.logo),
-              height: 50,
-              fit: BoxFit.fill,
-            ),
+          Image(image: AssetImage(AssetsClass.logo), height: 50),
+          SizedBox(height: 4),
+          Text(
+            "Read free boks",
+            textAlign: TextAlign.center,
+            style: TextStyle(fontStyle: FontStyle.italic, fontSize: 20),
           ),
         ],
       ),

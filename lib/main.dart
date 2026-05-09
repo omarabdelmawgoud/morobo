@@ -13,7 +13,7 @@ class Morobo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: ThemeData().copyWith(scaffoldBackgroundColor: kPrimColor),
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: kPrimColor,),
       home: const SplashView(),
       debugShowCheckedModeBanner: false,
     );
